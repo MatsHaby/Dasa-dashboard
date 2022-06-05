@@ -1,0 +1,85 @@
+[
+  {
+    "id": 1,
+    "data": [
+      {
+        "id": 1,
+        "name": "Engine",
+        "data": [
+          {
+            "id": 1,
+            "name": "Engine value 1",
+            "value": 10
+          },
+          {
+            "id": 2,
+            "name": "Engine value 2",
+            "value": 20
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Transmission",
+        "data": [
+          {
+            "id": 3,
+            "name": "Transmission value 1",
+            "value": 200
+          },
+          {
+            "id": 4,
+            "name": "Transmission value 2",
+            "value": 200
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Lights",
+        "data": [
+          {
+            "id": 5,
+            "name": "Forward lights",
+            "value": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "data": [
+      {
+        "id": 4,
+        "name": "Breaks",
+        "data": [
+          {
+            "id": 6,
+            "name": "Breaks value 1",
+            "value": 50
+          },
+          {
+            "id": 7,
+            "name": "Breaks value 2",
+            "value": 50
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Model",
+        "data": [
+          {
+            "id": 8,
+            "name": "Engine model",
+            "value": [
+              "Diesel",
+              "Petrol"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
