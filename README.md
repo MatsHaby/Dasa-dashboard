@@ -4,7 +4,7 @@
 
 # The dashboard
 
-This purpose of this dashboard is to provide a simple way to gePt and overview over your vehicles.
+This purpose of this dashboard is to provide a simple way to get and overview over your vehicles.
 
  # Tech Stack
 
