@@ -26,13 +26,9 @@ export default function Nav() {
     setSelectedIndex(index);
   };
 
-  const handleDrawerOpen = (): void => {
-    setOpen(true);
-  };
-
-  const handleDrawerClose = (): void => {
-    setOpen(false);
-  };
+  const handleOnChrevronClick = (): void => {
+    setOpen(!open);
+  }
 
   const handleDrawerToggle = (): void => {
     setMobileOpen(!mobileOpen);
@@ -52,21 +48,6 @@ export default function Nav() {
         </ListItem>
       ))}
     </List>
-  )
-
-  const chevronIcon = (
-    open === true ?
-      <>
-        <IconButton onClick={handleDrawerClose}>
-          <ChevronLeftIcon />
-        </IconButton>
-      </>
-      :
-      <>
-        <IconButton onClick={handleDrawerOpen}>
-          <ChevronRightIcon />
-        </IconButton>
-      </>
   )
 
   return (
@@ -101,7 +82,9 @@ export default function Nav() {
       {/* Desktop Drawer */}
       <Drawer variant="permanent" open={open} sx={navStyles.drawer}>
         <DrawerHeader sx={{ justifyContent: open ? 'flex-end' : 'center' }}>
-          {chevronIcon}
+          <IconButton onClick={handleOnChrevronClick}>
+            {open === true ? <ChevronLeftIcon /> : <ChevronRightIcon />}
+          </IconButton>
         </DrawerHeader>
         {menuItems}
       </Drawer>
